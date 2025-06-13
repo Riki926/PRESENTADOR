@@ -1,0 +1,19 @@
+{
+  "name": "presentador",
+  "version": "1.0.0",
+  "description": "Este proyecto permite subir archivos PDF o DOCX, convertirlos a imágenes y navegar entre ellas como slides.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

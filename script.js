@@ -139,4 +139,15 @@ function resetSlides() {
     slides = [];
     currentSlide = 0;
     slideViewer.innerHTML = '';
-} 
+}
+
+// Exports for testing in Node.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        resetSlides,
+        getSlides: () => slides,
+        setSlides: (arr) => { slides = arr; },
+        getCurrentSlide: () => currentSlide,
+        setCurrentSlide: (val) => { currentSlide = val; },
+    };
+}
