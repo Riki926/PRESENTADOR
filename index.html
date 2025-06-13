@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentador de Slides PDF/DOCX</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- PDF.js desde CDN -->
+    <!-- Instrucciones: Si usas npm, instala con: npm install pdfjs-dist -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.js"></script>
+    <!-- Mammoth.js desde CDN -->
+    <!-- Instrucciones: Si usas npm, instala con: npm install mammoth -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js"></script>
+    <!-- html2canvas desde CDN -->
+    <!-- Instrucciones: Si usas npm, instala con: npm install html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Presentador de Slides</h1>
+        <input type="file" id="fileInput" accept=".pdf,.docx">
+        <div id="slideViewer">
+            <!-- Aquí se renderiza el slide actual -->
+        </div>
+        <div class="controls">
+            <button id="btnInicio">Inicio</button>
+            <button id="btnAnterior">Anterior</button>
+            <button id="btnSiguiente">Siguiente</button>
+            <button id="btnIr">Ir a página…</button>
+            <button id="btnRedireccionar">Redireccionar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
